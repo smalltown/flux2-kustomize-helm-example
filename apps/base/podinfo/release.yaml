@@ -19,6 +19,10 @@ spec:
   # Default values
   # https://github.com/stefanprodan/podinfo/blob/master/charts/podinfo/values.yaml
   values:
+    image:
+      repository: stefanprodan/podinfo
+      tag: 5.1.2
+      pullPolicy: IfNotPresent
     cache: redis-master.redis:6379
     ingress:
       enabled: true
